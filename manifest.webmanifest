@@ -1,8 +1,1 @@
-{
-  "name": "UPSSSC PET Practice Portal",
-  "short_name": "PET Practice",
-  "start_url": "./index.html",
-  "display": "standalone",
-  "background_color": "#f4f7fb",
-  "theme_color": "#173b6c"
-}
+{"name":"UPSSSC PET PYQ Master","short_name":"PET Master","start_url":"./","scope":"./","display":"standalone","background_color":"#f4f7fa","theme_color":"#102b46","description":"Local-first UPSSSC PET practice simulator"}
