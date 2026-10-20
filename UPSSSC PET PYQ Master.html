@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="hi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UPSSSC PET PYQ Master</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap">
+<style>
+:root{--bg:#eef2f6;--card:#fff;--ink:#14213d;--mut:#5b6678;--acc:#0f6b5c;--acc2:#f2a900;--bad:#c0392b;--ok:#1e8e4e;--line:#d5dce6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0f1522;--card:#18213a;--ink:#e8edf7;--mut:#9aa7bd;--acc:#35c4a8;--acc2:#f2b73a;--bad:#ff7b6b;--ok:#4cd38a;--line:#2b3757}}
+*{box-sizing:border-box}html,body{margin:0}body{font:16px/1.5 Hind,system-ui,sans-serif;background:var(--bg);color:var(--ink);padding-bottom:76px}
+main{max-width:760px;margin:0 auto;padding:14px}
+h1,h2,h3{margin:.2em 0 .4em;line-height:1.25}h1{font-size:1.5rem}h2{font-size:1.2rem}h3{font-size:1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:0 0 12px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.sp{justify-content:space-between}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.stat b{display:block;font-size:1.5rem}.mut{color:var(--mut);font-size:.88rem}
+button,select,input,textarea{font:inherit;color:inherit}
+.btn{min-height:46px;padding:0 16px;border-radius:10px;border:1px solid var(--acc);background:var(--acc);color:#fff;font-weight:600;cursor:pointer}
+.btn.alt{background:transparent;color:var(--acc)}.btn.warn{background:var(--bad);border-color:var(--bad)}.btn.sm{min-height:38px;padding:0 12px;font-size:.9rem}
+.opt{display:block;width:100%;text-align:left;min-height:52px;padding:10px 14px;margin:0 0 8px;border:2px solid var(--line);border-radius:10px;background:var(--card);cursor:pointer}
+.opt.sel{border-color:var(--acc);background:color-mix(in srgb,var(--acc) 14%,var(--card))}
+.opt.right{border-color:var(--ok)}.opt.wrong{border-color:var(--bad)}
+nav{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--card);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);z-index:5}
+nav button{flex:1;min-height:56px;border:0;background:none;font-size:.82rem;color:var(--mut);cursor:pointer}nav button.on{color:var(--acc);font-weight:700;box-shadow:inset 0 3px var(--acc)}
+.pal{display:grid;grid-template-columns:repeat(auto-fill,minmax(42px,1fr));gap:6px}
+.pal button{min-height:42px;border-radius:8px;border:1px solid var(--line);background:var(--card);cursor:pointer}
+.pal .nv{background:var(--card)}.pal .vs{background:var(--bad);color:#fff;border-color:var(--bad)}.pal .an{background:var(--ok);color:#fff;border-color:var(--ok)}.pal .mk{background:var(--acc2);color:#000;border-color:var(--acc2)}.pal .cur{outline:3px solid var(--ink)}
+.tag{display:inline-block;padding:2px 8px;border-radius:99px;font-size:.78rem;border:1px solid var(--line);color:var(--mut)}
+.tag.o{border-color:var(--acc2);color:var(--ink);background:color-mix(in srgb,var(--acc2) 25%,var(--card))}
+.timer{font-weight:700;font-variant-numeric:tabular-nums;font-size:1.2rem}.low{color:var(--bad)}
+table{width:100%;border-collapse:collapse}td,th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left;font-size:.92rem}
+.note{border-left:4px solid var(--acc2);padding:8px 12px;background:color-mix(in srgb,var(--acc2) 14%,var(--card));border-radius:6px;font-size:.9rem}
+textarea,input[type=number],select{width:100%;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+:focus-visible{outline:3px solid var(--acc2);outline-offset:2px}
+</style></head><body>
+<main id="app"></main>
+<nav id="nav"></nav>
+<script>
+"use strict";
+/* ---- Starter bank: ORIGINAL PRACTICE QUESTIONS only (no verified PYQs bundled). Edit/extend via Settings > import. ---- */
+const SRC="ORIGINAL PRACTICE QUESTION";
+const BANK=[
+{id:"P001",s:"Polity",t:"Fundamental Rights",q:"Right to life and personal liberty भारतीय संविधान के किस अनुच्छेद में है?",o:["अनुच्छेद 14","अनुच्छेद 19","अनुच्छेद 21","अनुच्छेद 32"],a:2,e:"Article 21 कहता है कि कानून द्वारा स्थापित प्रक्रिया के बिना किसी का जीवन या दैहिक स्वतंत्रता नहीं छीनी जा सकती।",w:["Art. 14 = कानून के समक्ष समता, जीवन का अधिकार नहीं।","Art. 19 = छह स्वतंत्रताएँ (बोलना, घूमना आदि)।","सही: Art. 21 = जीवन और दैहिक स्वतंत्रता।","Art. 32 = संवैधानिक उपचारों का अधिकार (सुप्रीम कोर्ट जाना)।"],k:"14 समता, 19 स्वतंत्रता, 21 जीवन, 32 उपचार",tip:"21 = 'Ek-Ikkees' जीवन की गारंटी।"},
+{id:"P002",s:"Polity",t:"Fundamental Duties",q:"मूल कर्तव्य (Fundamental Duties) संविधान में किस संशोधन द्वारा जोड़े गए?",o:["24वाँ","42वाँ","44वाँ","73वाँ"],a:1,e:"42वें संशोधन (1976) ने स्वर्ण सिंह समिति की सिफारिश पर भाग IV-A (अनुच्छेद 51A) जोड़ा।",w:["24वाँ संशोधन मौलिक अधिकारों में संशोधन की संसद की शक्ति से जुड़ा है।","सही: 42वाँ संशोधन, 1976, Art. 51A।","44वाँ संशोधन संपत्ति के अधिकार को मौलिक अधिकार की सूची से हटाने से जुड़ा है।","73वाँ संशोधन पंचायती राज से जुड़ा है।"],k:"Fundamental Duties: 42वाँ संशोधन, Part IV-A, Art. 51A",tip:"42 = 'Duty' वाला संशोधन।"},
+{id:"P003",s:"Polity",t:"State Executive",q:"राज्य के राज्यपाल की नियुक्ति कौन करता है?",o:["प्रधानमंत्री","राष्ट्रपति","मुख्यमंत्री","मुख्य न्यायाधीश"],a:1,e:"अनुच्छेद 155 के अनुसार राज्यपाल की नियुक्ति राष्ट्रपति करता है, वह राष्ट्रपति की प्रसादपर्यंत पद धारण करता है।",w:["PM औपचारिक रूप से नियुक्ति नहीं करता (सलाह दे सकता है)।","सही: राष्ट्रपति (Art. 155)।","मुख्यमंत्री की नियुक्ति राज्यपाल करता है, उल्टा नहीं।","मुख्य न्यायाधीश की इसमें कोई भूमिका नहीं।"],k:"Governor: Art. 153 पद, Art. 155 नियुक्ति",tip:"राज्यपाल → राष्ट्रपति का प्रतिनिधि।"},
+{id:"P004",s:"History",t:"Modern India",q:"1857 का विद्रोह किस स्थान से शुरू हुआ?",o:["दिल्ली","मेरठ","कानपुर","झाँसी"],a:1,e:"10 मई 1857 को मेरठ की सैनिक छावनी में सिपाहियों ने विद्रोह किया और फिर दिल्ली की ओर बढ़े।",w:["दिल्ली विद्रोह का प्रमुख केंद्र बना, शुरुआत यहाँ से नहीं हुई।","सही: मेरठ, 10 मई 1857।","कानपुर में नाना साहिब ने नेतृत्व किया, बाद में।","झाँसी में रानी लक्ष्मीबाई ने नेतृत्व किया, बाद में।"],k:"1857: शुरुआत मेरठ (10 मई), केंद्र दिल्ली",tip:"M for Meerut = Mutiny की शुरुआत।"},
+{id:"P005",s:"Geography",t:"India",q:"क्षेत्रफल की दृष्टि से भारत का सबसे बड़ा राज्य कौन-सा है?",o:["मध्य प्रदेश","उत्तर प्रदेश","राजस्थान","महाराष्ट्र"],a:2,e:"राजस्थान लगभग 3.42 लाख वर्ग किमी के साथ क्षेत्रफल में सबसे बड़ा राज्य है।",w:["मध्य प्रदेश दूसरा बड़ा राज्य है।","उत्तर प्रदेश जनसंख्या में सबसे बड़ा है, क्षेत्रफल में नहीं।","सही: राजस्थान।","महाराष्ट्र तीसरे स्थान पर है।"],k:"क्षेत्रफल: राजस्थान > मध्य प्रदेश > महाराष्ट्र",tip:"Raj-asthan = राजा बड़ा।"},
+{id:"P006",s:"Economy",t:"Banking",q:"भारतीय रिज़र्व बैंक (RBI) की स्थापना किस वर्ष हुई?",o:["1935","1947","1949","1969"],a:0,e:"RBI की स्थापना 1 अप्रैल 1935 को RBI Act, 1934 के अंतर्गत हुई।",w:["सही: 1935।","1947 में भारत स्वतंत्र हुआ।","1949 में RBI का राष्ट्रीयकरण हुआ।","1969 में 14 बड़े बैंकों का राष्ट्रीयकरण हुआ।"],k:"RBI: स्थापना 1935, राष्ट्रीयकरण 1949",tip:"स्थापना 1935, सरकारी 1949।"},
+{id:"P007",s:"Science",t:"Biology",q:"विटामिन C की कमी से कौन-सा रोग होता है?",o:["रतौंधी","स्कर्वी","रिकेट्स","बेरी-बेरी"],a:1,e:"विटामिन C (एस्कॉर्बिक अम्ल) की कमी से स्कर्वी होता है, जिसमें मसूड़ों से खून आता है।",w:["रतौंधी विटामिन A की कमी से होती है।","सही: स्कर्वी।","रिकेट्स विटामिन D की कमी से होता है।","बेरी-बेरी विटामिन B1 की कमी से होता है।"],k:"A रतौंधी, B1 बेरी-बेरी, C स्कर्वी, D रिकेट्स",tip:"C = Citrus न खाओ तो Scurvy।"},
+{id:"P008",s:"Arithmetic",t:"Speed & Distance",q:"एक कार 60 किमी/घंटा की चाल से 2.5 घंटे चलती है। कुल दूरी कितनी होगी?",o:["120 किमी","140 किमी","150 किमी","160 किमी"],a:2,e:"दूरी = चाल × समय = 60 × 2.5 = 150 किमी।",w:["120 = 60 × 2, आधा घंटा छूट गया।","140 का कोई सही गुणा नहीं बनता।","सही: 60 × 2.5 = 150।","160 बहुत ज़्यादा है; 60 × 2.67 के बराबर।"],k:"दूरी = चाल × समय",tip:"2.5 = 2 + आधा: 120 + 30।"},
+{id:"P009",s:"Arithmetic",t:"Profit & Loss",q:"एक वस्तु ₹400 में खरीदी और ₹500 में बेची गई। लाभ प्रतिशत क्या है?",o:["20%","25%","30%","10%"],a:1,e:"लाभ = 500 − 400 = 100। लाभ% = (लाभ ÷ क्रय मूल्य) × 100 = 100/400 × 100 = 25%।",w:["20% तब आता जब लाभ को विक्रय मूल्य (500) से भाग देते: यही आम गलती है।","सही: 25%।","30% के लिए लाभ ₹120 चाहिए।","10% के लिए लाभ ₹40 चाहिए।"],k:"लाभ% हमेशा क्रय मूल्य (CP) पर",tip:"प्रतिशत हमेशा CP पर।"},
+{id:"P010",s:"Hindi",t:"पर्यायवाची",q:"'सूर्य' का पर्यायवाची शब्द कौन-सा है?",o:["निशा","दिनकर","जलद","सागर"],a:1,e:"'दिनकर' का अर्थ है दिन करने वाला, यानी सूर्य।",w:["निशा = रात।","सही: दिनकर = सूर्य।","जलद = बादल।","सागर = समुद्र।"],k:"सूर्य: रवि, भानु, दिनकर, दिवाकर",tip:"दिन + कर = दिनकर।"},
+{id:"P011",s:"English",t:"Antonyms",q:"Choose the antonym of 'ANCIENT'.",o:["Old","Modern","Archaic","Historic"],a:1,e:"'Ancient' means very old; its opposite is 'modern', meaning of the present time.",w:["'Old' is a synonym.","Correct: 'Modern' is the opposite.","'Archaic' is a synonym (very old-fashioned).","'Historic' relates to the past, so it is not an antonym."],k:"Ancient ↔ Modern",tip:"Antonym = उल्टा।"},
+{id:"P012",s:"Reasoning",t:"Number Series",q:"श्रेणी पूरी कीजिए: 2, 6, 12, 20, ?",o:["28","30","32","36"],a:1,e:"अंतर 4, 6, 8 हैं, अगला अंतर 10, इसलिए 20 + 10 = 30। (n × (n+1) पैटर्न: 5 × 6 = 30)",w:["28 = 20 + 8, अंतर बढ़ना भूल गए।","सही: 30।","32 = 20 + 12, अंतर छोड़ दिया।","36 पैटर्न में नहीं बैठता।"],k:"अंतर देखें: 4, 6, 8, 10",tip:"पहले अंतर निकालें।"}
+];
+const IVL=[0,1,3,7,14,30];
+const K="pet_master_v1";
+let db;
+try{db=JSON.parse(localStorage.getItem(K))}catch(e){db=null}
+db=Object.assign({v:1,cfg:{dur:120,pos:1,neg:.25,total:100},att:[],rep:{},notes:{},bm:{},rep2:{},ses:null,custom:[]},db||{});
+let storeOK=true;
+function save(){try{localStorage.setItem(K,JSON.stringify(db))}catch(e){storeOK=false}}
+const bank=()=>BANK.concat(db.custom);
+const byId=id=>bank().find(q=>q.id===id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const $=id=>document.getElementById(id);
+let view="home",S=db.ses,rid=null,tick=null,tab="Practice";
+
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a}
+function nav(){const t=[["home","Home"],["practice","Practice"],["revision","Revision"],["history","History"],["settings","Settings"]];
+ $("nav").innerHTML=view==="test"?"":t.map(x=>`<button class="${view===x[0]?"on":""}" onclick="go('${x[0]}')">${x[1]}</button>`).join("")}
+function go(v){view=v;clearInterval(tick);render();scrollTo(0,0)}
+
+/* ---- stats from saved attempts only ---- */
+function stats(){const items=db.att.flatMap(a=>a.items);const by={};
+ items.forEach(i=>{const q=byId(i.id);if(!q)return;const k=q.s+" · "+q.t;by[k]=by[k]||{n:0,c:0,att:0};by[k].n++;if(i.a!=null)by[k].att++;if(i.ok)by[k].c++});
+ const att=items.filter(i=>i.a!=null),c=att.filter(i=>i.ok).length;
+ const days=[...new Set(db.att.map(a=>new Date(a.t).toDateString()))];
+ let streak=0,d=new Date();if(!days.includes(d.toDateString()))d.setDate(d.getDate()-1);
+ while(days.includes(d.toDateString())){streak++;d.setDate(d.getDate()-1)}
+ const time=items.reduce((s,i)=>s+(i.sec||0),0);
+ return{items,att,c,w:att.length-c,sk:items.length-att.length,by,streak,time,
+  weak:Object.entries(by).filter(([k,v])=>v.att>=1).map(([k,v])=>[k,v.c/v.att,v.att]).sort((a,b)=>a[1]-b[1]).slice(0,3)}}
+const due=()=>Object.entries(db.rep).filter(([id,r])=>r.due<=Date.now()&&byId(id)).map(x=>x[0]);
+const wrongIds=()=>Object.entries(db.rep).filter(([id,r])=>r.last==="w"&&byId(id)).map(x=>x[0]);
+
+/* ---- session ---- */
+function start(mode,ids,timed){if(!ids.length)return alert("इस चयन में कोई प्रश्न नहीं है।");
+ const n=ids.length;S=db.ses={mode,ids:shuffle(ids),a:{},vis:{},mk:{},cf:{},qt:{},cur:0,t0:Date.now(),lt:Date.now(),end:timed?Date.now()+Math.round(n*db.cfg.dur/db.cfg.total*60000):0,pos:db.cfg.pos,neg:db.cfg.neg,done:false};
+ S.vis[0]=1;save();view="test";render()}
+function leave(){const q=S.ids[S.cur];S.qt[q]=(S.qt[q]||0)+(Date.now()-S.lt)/1000;S.lt=Date.now()}
+function jump(i){leave();S.cur=i;S.vis[i]=1;save();render()}
+function pick(i){S.a[S.cur]=i;save();render()}
+function clearAns(){delete S.a[S.cur];save();render()}
+function mark(){S.mk[S.cur]=!S.mk[S.cur];save();render()}
+function conf(c){S.cf[S.cur]=c;save();render()}
+function submit(force){if(S.done)return;if(!force&&!confirm(`जमा करें? ${Object.keys(S.a).length}/${S.ids.length} प्रश्न हल किए हैं।`))return;
+ S.done=true;leave();clearInterval(tick);
+ const items=S.ids.map((id,i)=>{const q=byId(id),a=S.a[i];return{id,a:a==null?null:a,ok:a===q.a,sec:Math.round(S.qt[id]||0),cf:S.cf[i]||null}});
+ const c=items.filter(i=>i.ok).length,w=items.filter(i=>i.a!=null&&!i.ok).length;
+ const att={id:"A"+Date.now(),t:Date.now(),mode:S.mode,items,pos:S.pos,neg:S.neg,c,w,score:+(c*S.pos-w*S.neg).toFixed(2),max:items.length*S.pos,sec:Math.round((Date.now()-S.t0)/1000)};
+ db.att.push(att);
+ items.forEach(i=>{const r=db.rep[i.id]||{box:0};if(i.a==null)return;
+  if(i.ok){r.box=Math.min(IVL.length-1,r.box+1);r.last="r"}else{r.box=0;r.last="w"}
+  r.due=Date.now()+IVL[Math.min(r.box,IVL.length-1)]*864e5;if(!i.ok)r.due=Date.now()+864e5*IVL[1];db.rep[i.id]=r});
+ db.ses=null;S=null;save();rid=att.id;view="result";render()}
+
+/* ---- views ---- */
+function render(){nav();const f={home,practice,test,result,revision,history,settings}[view];$("app").innerHTML=f();
+ if(view==="test"){clearInterval(tick);if(S&&S.end){tick=setInterval(()=>{const l=S.end-Date.now(),el=$("tm");if(l<=0){alert("समय समाप्त। परीक्षा अपने आप जमा हो रही है।");submit(true)}else if(el){el.textContent=fmt(l/1000);el.classList.toggle("low",l<60000)}},500)}}}
+const fmt=s=>{s=Math.max(0,Math.round(s));return String(s/60|0).padStart(2,"0")+":"+String(s%60).padStart(2,"0")};
+const pct=(a,b)=>b?Math.round(a/b*100)+"%":"–";
+
+function home(){const st=stats(),d=due().length;
+ return `<h1>UPSSSC PET PYQ Master</h1><p class="mut">आपके अपने अभ्यास डेटा पर आधारित। कोई लॉगिन नहीं, सब कुछ इसी फ़ोन में सेव।</p>
+ ${storeOK?"":`<div class="note">स्टोरेज उपलब्ध नहीं है, प्रगति सेव नहीं होगी।</div>`}
+ ${S&&!S.done?`<div class="card row sp"><div><h3>अधूरा टेस्ट मिला</h3><span class="mut">${Object.keys(S.a).length}/${S.ids.length} हल</span></div><button class="btn" onclick="go('test')">Resume</button></div>`:""}
+ <div class="card"><div class="grid">
+ <div class="stat"><b>${st.att.length}</b><span class="mut">प्रयास किए</span></div>
+ <div class="stat"><b>${pct(st.c,st.att.length)}</b><span class="mut">सटीकता</span></div>
+ <div class="stat"><b>${st.c}/${st.w}/${st.sk}</b><span class="mut">सही/गलत/छूटे</span></div>
+ <div class="stat"><b>${st.items.length?Math.round(st.time/st.items.length)+"s":"–"}</b><span class="mut">औसत समय/प्रश्न</span></div>
+ <div class="stat"><b>${st.streak}</b><span class="mut">दिन की स्ट्रीक</span></div>
+ <div class="stat"><b>${d}</b><span class="mut">रिवीज़न due</span></div></div></div>
+ <div class="card"><h2>आज का सुझाव</h2>${rec(st,d)}</div>
+ <div class="card"><h2>सबसे कमज़ोर 3 टॉपिक</h2>${st.weak.length?st.weak.map(w=>`<div class="row sp"><span>${esc(w[0])}</span><b>${Math.round(w[1]*100)}% (${w[2]} प्रयास)</b></div>`).join(""):`<p class="mut">अभी कोई डेटा नहीं। एक टेस्ट दें, फिर यहाँ असली आँकड़े दिखेंगे।</p>`}</div>
+ <div class="row"><button class="btn" onclick="start('Mock',bank().map(q=>q.id),true)">Mock test शुरू करें</button><button class="btn alt" onclick="go('practice')">Practice</button></div>`}
+function rec(st,d){if(d)return `<p>${d} प्रश्न रिवीज़न के लिए due हैं, पहले उन्हें करें ताकि भूलने से पहले दोहराव हो जाए।</p><button class="btn sm" onclick="go('revision')">रिवीज़न खोलें</button>`;
+ if(st.weak.length&&st.weak[0][1]<.6)return `<p>${esc(st.weak[0][0])} में आपकी सटीकता ${Math.round(st.weak[0][1]*100)}% है, इसलिए इसका अभ्यास करें।</p>`;
+ return `<p>शुरुआत करें: किसी विषय का 5 प्रश्नों का अभ्यास चुनें। नतीजों के आधार पर सुझाव बदलेंगे।</p>`}
+
+function practice(){const subs=[...new Set(bank().map(q=>q.s))];
+ return `<h1>Practice</h1><div class="card"><h3>विषय चुनें</h3><select id="ps">${subs.map(s=>`<option>${s}</option>`).join("")}<option value="*">सभी विषय</option></select>
+ <h3>प्रश्नों की संख्या</h3><select id="pn">${[5,10,15,20].map(n=>`<option>${n}</option>`).join("")}</select>
+ <p><label><input type="checkbox" id="pt"> टाइमर के साथ</label></p>
+ <button class="btn" onclick="const s=$('ps').value,n=+$('pn').value;start('Practice · '+s,shuffle(bank().filter(q=>s==='*'||q.s===s).map(q=>q.id)).slice(0,n),$('pt').checked)">शुरू करें</button></div>
+ <div class="note">Starter bank में ${BANK.length} ORIGINAL PRACTICE QUESTIONS हैं। ये असली PYQ नहीं हैं। असली, सत्यापित पेपर Settings से JSON में इम्पोर्ट करें।</div>`}
+
+function test(){if(!S){view="home";return home()}const i=S.cur,id=S.ids[i],q=byId(id);
+ const st=j=>S.a[j]!=null&&S.mk[j]?"mk an":S.mk[j]?"mk":S.a[j]!=null?"an":S.vis[j]?"vs":"nv";
+ return `<div class="row sp card" style="position:sticky;top:0;z-index:4"><b>${esc(S.mode)}</b>${S.end?`<span class="timer" id="tm">${fmt((S.end-Date.now())/1000)}</span>`:`<span class="mut">बिना टाइमर</span>`}<button class="btn sm warn" onclick="submit()">Submit</button></div>
+ <div class="card"><div class="mut">प्रश्न ${i+1}/${S.ids.length} · +${S.pos} / −${S.neg}</div><h2>${esc(q.q)}</h2>
+ ${q.o.map((o,j)=>`<button class="opt ${S.a[i]===j?"sel":""}" onclick="pick(${j})"><b>${"ABCD"[j]}.</b> ${esc(o)}</button>`).join("")}
+ <div class="row"><span class="mut">भरोसा (वैकल्पिक, मार्किंग नहीं बदलता):</span>${["Sure","Unsure","Guess"].map(c=>`<button class="btn sm ${S.cf[i]===c?"":"alt"}" onclick="conf('${c}')">${c}</button>`).join("")}</div></div>
+ <div class="row"><button class="btn alt" ${i?"":"disabled"} onclick="jump(${i-1})">Previous</button><button class="btn alt" onclick="clearAns()">Clear</button><button class="btn alt" onclick="mark()">${S.mk[i]?"Unmark":"Review"}</button><button class="btn" ${i<S.ids.length-1?"":"disabled"} onclick="jump(${i+1})">Next</button></div>
+ <div class="card" style="margin-top:12px"><div class="pal">${S.ids.map((_,j)=>`<button class="${st(j)} ${j===i?"cur":""}" aria-label="प्रश्न ${j+1}" onclick="jump(${j})">${j+1}</button>`).join("")}</div>
+ <p class="mut">हरा = उत्तर दिया, लाल = देखा पर खाली, पीला = review, सफ़ेद = नहीं देखा</p></div>`}
+
+function result(){const a=db.att.find(x=>x.id===rid);if(!a){return history()}
+ const n=a.items.length,att=a.c+a.w,subj={};
+ a.items.forEach(i=>{const q=byId(i.id);if(!q)return;const s=subj[q.s]=subj[q.s]||{n:0,c:0,att:0};s.n++;if(i.a!=null)s.att++;if(i.ok)s.c++});
+ const secs=a.items.filter(i=>i.a!=null).map(i=>i.sec),cf={};
+ a.items.filter(i=>i.cf&&i.a!=null).forEach(i=>{const x=cf[i.cf]=cf[i.cf]||{n:0,c:0};x.n++;if(i.ok)x.c++});
+ const prev=db.att.filter(x=>x.t<a.t&&x.mode===a.mode).pop();
+ return `<h1>Scorecard</h1><div class="card"><div class="grid">
+ <div class="stat"><b>${a.score}/${a.max}</b><span class="mut">नेट अंक</span></div>
+ <div class="stat"><b>${pct(a.c,att)}</b><span class="mut">सटीकता (प्रयास में से सही)</span></div>
+ <div class="stat"><b>${pct(att,n)}</b><span class="mut">अटेम्प्ट रेट</span></div>
+ <div class="stat"><b>${(a.w*a.neg).toFixed(2)}</b><span class="mut">नेगेटिव से गए अंक</span></div></div>
+ <p>सही ${a.c} · गलत ${a.w} · छूटे ${n-att} · कुल समय ${fmt(a.sec)} · औसत ${att?Math.round(secs.reduce((x,y)=>x+y,0)/att):0}s/प्रश्न${secs.length?` · सबसे तेज़ ${Math.min(...secs)}s, सबसे धीमा ${Math.max(...secs)}s`:""}</p>
+ <p class="mut">सटीकता और अंक-प्रतिशत अलग हैं। अंक-प्रतिशत = ${pct(a.score,a.max)}. ये आधिकारिक कटऑफ़ या रैंक नहीं हैं।${prev?` पिछला ${esc(a.mode)} स्कोर: ${prev.score}/${prev.max}.`:""}</p></div>
+ <div class="card"><h2>विषय अनुसार</h2><table>${Object.entries(subj).map(([s,v])=>`<tr><td>${s}</td><td>${v.c}/${v.n}</td><td>${pct(v.c,v.att)}</td></tr>`).join("")}</table></div>
+ ${Object.keys(cf).length?`<div class="card"><h2>भरोसा बनाम सटीकता</h2>${Object.entries(cf).map(([k,v])=>`<div>${k}: ${pct(v.c,v.n)} सही (${v.n} प्रश्न)</div>`).join("")}</div>`:""}
+ <h2>हर प्रश्न की व्याख्या</h2>${a.items.map((i,x)=>explain(i,x)).join("")}
+ <div class="row"><button class="btn" onclick="start('Retake',a_w('${a.id}'),false)" ${a.w?"":"disabled"}>गलत प्रश्न दोबारा</button><button class="btn alt" onclick="start('Replay',db.att.find(x=>x.id==='${a.id}').items.map(i=>i.id),false)">पूरा टेस्ट फिर से (नया attempt)</button></div>`}
+const a_w=id=>db.att.find(x=>x.id===id).items.filter(i=>i.a!=null&&!i.ok).map(i=>i.id);
+function explain(i,x){const q=byId(i.id);if(!q)return"";const st=i.a==null?"छूटा":i.ok?"सही":"गलत";
+ return `<div class="card"><div class="row sp"><b>Q${x+1}</b><span class="tag">${st}</span></div><p>${esc(q.q)}</p>
+ ${q.o.map((o,j)=>`<div class="opt ${j===q.a?"right":j===i.a?"wrong":""}"><b>${"ABCD"[j]}.</b> ${esc(o)}${j===i.a?" (आपका उत्तर)":""}${j===q.a?" ✓":""}<div class="mut">${esc(q.w[j])}</div></div>`).join("")}
+ <p><b>क्यों सही:</b> ${esc(q.e)}</p><p><b>याद रखें:</b> ${esc(q.k)}</p><p class="mut">Tip: ${esc(q.tip||"")}</p>
+ <p><span class="tag o">${SRC}</span> <span class="tag">ये मूल रूप से लिखे गए अभ्यास प्रश्न हैं, PYQ नहीं</span></p>
+ <textarea id="n_${q.id}" placeholder="आपका नोट" rows="2">${esc(db.notes[q.id]||"")}</textarea>
+ <div class="row"><button class="btn sm alt" onclick="db.notes['${q.id}']=$('n_${q.id}').value;save();this.textContent='Note सेव ✓'">Note सेव करें</button>
+ <button class="btn sm alt" onclick="db.bm['${q.id}']=!db.bm['${q.id}'];save();this.textContent=db.bm['${q.id}']?'Bookmarked ✓':'Bookmark'">${db.bm[q.id]?"Bookmarked ✓":"Bookmark"}</button>
+ <button class="btn sm alt" onclick="db.rep['${q.id}']=Object.assign(db.rep['${q.id}']||{box:0},{due:Date.now()});save();this.textContent='Revision में ✓'">Revision में जोड़ें</button>
+ <button class="btn sm alt" onclick="db.rep2['${q.id}']=1;save();this.textContent='Report दर्ज ✓'">Report गलती</button></div></div>`}
+
+function revision(){const d=due(),w=wrongIds(),bm=Object.keys(db.bm).filter(k=>db.bm[k]&&byId(k));
+ return `<h1>Revision</h1><div class="card"><h3>अभी due: ${d.length}</h3><p class="mut">शेड्यूल: उसी दिन, 1, 3, 7, 14, 30 दिन। ये बदलने योग्य अध्ययन-सहायक अंतराल हैं, हर किसी के लिए सर्वोत्तम होने की गारंटी नहीं।</p><button class="btn" onclick="start('Revision',due(),false)" ${d.length?"":"disabled"}>Due प्रश्न करें</button></div>
+ <div class="card"><h3>Mistake notebook: ${w.length}</h3><button class="btn" onclick="start('Mistakes',wrongIds(),false)" ${w.length?"":"disabled"}>सिर्फ़ गलत प्रश्न दोबारा</button></div>
+ <div class="card"><h3>Bookmarks: ${bm.length}</h3>${bm.map(k=>`<p>${esc(byId(k).q)}${db.notes[k]?`<br><span class="mut">नोट: ${esc(db.notes[k])}</span>`:""}</p>`).join("")||`<p class="mut">किसी प्रश्न की व्याख्या में Bookmark दबाएँ।</p>`}</div>`}
+
+function history(){const h=db.att.slice().reverse();
+ return `<h1>History</h1>${h.length?h.map(a=>`<div class="card row sp"><div><b>${esc(a.mode)}</b><div class="mut">${new Date(a.t).toLocaleString()} · ${a.c} सही, ${a.w} गलत</div></div><div class="row"><b>${a.score}/${a.max}</b><button class="btn sm alt" onclick="rid='${a.id}';go('result')">खोलें</button></div></div>`).join(""):`<div class="card"><p>अभी कोई टेस्ट नहीं दिया। Practice या Mock से शुरू करें, फिर स्कोर यहाँ दिखेंगे।</p></div>`}`}
+
+function settings(){const c=db.cfg;
+ return `<h1>Settings</h1><div class="card"><h2>परीक्षा कॉन्फ़िगरेशन</h2><div class="note">डिफ़ॉल्ट: 100 प्रश्न, 120 मिनट, +1 / −0.25। इन्हें अपनी परीक्षा के आधिकारिक नोटिफ़िकेशन से ज़रूर जाँचें। पुराने attempts अपने मूल नियमों से ही स्कोर रहते हैं।</div>
+ <p>अवधि (मिनट, 100 प्रश्नों के लिए)<input id="c1" type="number" value="${c.dur}"></p><p>सही के अंक<input id="c2" type="number" step=".25" value="${c.pos}"></p><p>गलत पर कटौती<input id="c3" type="number" step=".25" value="${c.neg}"></p>
+ <button class="btn" onclick="db.cfg={dur:+$('c1').value||120,pos:+$('c2').value||1,neg:+$('c3').value||0,total:100};save();alert('सेव हुआ')">सेव करें</button></div>
+ <div class="card"><h2>बैकअप और प्रश्न इम्पोर्ट</h2><div class="row"><button class="btn alt" onclick="exp()">Backup डाउनलोड</button><button class="btn alt" onclick="$('imp').click()">Backup/प्रश्न JSON इम्पोर्ट</button></div><input id="imp" type="file" accept=".json" hidden onchange="imp(this.files[0])">
+ <p class="mut">प्रश्न JSON: [{id,s,t,q,o:[4],a:0-3,e,w:[4],k,src,status}]. सिर्फ़ मौजूदा id से अलग प्रश्न जुड़ते हैं (डुप्लिकेट छोड़ दिए जाते हैं)।</p></div>
+ <div class="card"><button class="btn warn" onclick="if(confirm('सारा डेटा मिट जाएगा। जारी रखें?')){localStorage.removeItem(K);location.reload()}">सारा डेटा मिटाएँ</button></div>`}
+function exp(){const b=new Blob([JSON.stringify(db)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="pet-backup.json";a.click()}
+function imp(f){if(!f)return;f.text().then(t=>{try{const d=JSON.parse(t);
+ if(Array.isArray(d)){let n=0;d.forEach(q=>{if(q&&q.id&&q.q&&Array.isArray(q.o)&&q.o.length===4&&q.a>=0&&q.a<4&&!byId(q.id)){q.w=q.w||["","","",""];q.e=q.e||"";q.k=q.k||"";q.s=q.s||"General";q.t=q.t||"General";db.custom.push(q);n++}});save();alert(n+" प्रश्न जुड़े, "+(d.length-n)+" छोड़े (अमान्य या डुप्लिकेट)।")}
+ else if(d&&d.att&&d.cfg){db=Object.assign(db,d);save();alert("Backup बहाल हुआ")}else throw 0;render()}catch(e){alert("फ़ाइल मान्य नहीं है।")}})}
+document.addEventListener("keydown",e=>{if(view!=="test"||!S||/TEXTAREA|INPUT/.test(e.target.tagName))return;
+ if("abcd".includes(e.key.toLowerCase())&&e.key.length===1)pick("abcd".indexOf(e.key.toLowerCase()));
+ if(e.key==="ArrowRight"&&S.cur<S.ids.length-1)jump(S.cur+1);if(e.key==="ArrowLeft"&&S.cur>0)jump(S.cur-1)});
+if(S&&!S.done)S.lt=Date.now();
+render();
+</script></body></html>
